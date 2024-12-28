@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'moon-cx';
+  src:  url('fonts/moon-cx.eot?7g5hqi');
+  src:  url('fonts/moon-cx.eot?7g5hqi#iefix') format('embedded-opentype'),
+    url('fonts/moon-cx.ttf?7g5hqi') format('truetype'),
+    url('fonts/moon-cx.woff?7g5hqi') format('woff'),
+    url('fonts/moon-cx.svg?7g5hqi#moon-cx') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="moon-cx-"], [class*=" moon-cx-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'moon-cx' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.moon-cx-arrow-right:before {
+  content: "\e900";
+}
+.moon-cx-swap-currency:before {
+  content: "\e901";
+  color: #76768f;
+}
+.moon-cx-settings:before {
+  content: "\e902";
+  color: #525266;
+}
+.moon-cx-locale:before {
+  content: "\e903";
+  color: #525266;
+}
+.moon-cx-change:before {
+  content: "\e904";
+}
+.moon-cx-arrow-down:before {
+  content: "\e905";
+}
+.moon-cx-closed-lock:before {
+  content: "\e906";
+  color: #fff;
+}
+.moon-cx-opened-lock:before {
+  content: "\e907";
+}
+.moon-cx-moon-icon:before {
+  content: "\e908";
+}

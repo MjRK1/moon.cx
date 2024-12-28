@@ -4,17 +4,29 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3000",
+    "server": "serve -s ./dist -p 8080",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "check": "npm run lint",
+    "precommit": "npm run check",
     "preview": "vite preview",
     "prepare": "husky"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "classnames": "^2.5.1",
+    "framer-motion": "^11.15.0",
     "husky": "^9.1.7",
+    "path": "^0.12.7",
     "prettier": "^3.4.2",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.1.1",
+    "serve": "^14.2.4",
+    "vite-plugin-commonjs": "^0.10.4",
+    "vite-plugin-static-copy": "^2.2.0",
+    "vite-tsconfig-paths": "^5.1.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
