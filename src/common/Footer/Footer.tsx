@@ -1,0 +1,43 @@
+import React from 'react';
+
+export const Footer = () => {
+
+  return (
+    <div className="footer">
+      <div className="footer-info">
+        <div className="footer-info__community-info">
+          <div className="community-info__title">
+            Our community
+          </div>
+          <div className="community-info__networks-list">
+            <div className="networks-list__xtwitter-icon">
+              X
+            </div>
+            <div className="networks-list__telegram-icon">
+              Telegram
+            </div>
+          </div>
+        </div>
+        <div className="footer-info__app-info">
+          <div className="app-info__trade-link">
+            Trade
+          </div>
+          <div className="app-info__pools-link">
+            Pools
+          </div>
+        </div>
+        <div className="footer-info__developers-info">
+          <div className="developers-info__listing-link">
+            Listing
+          </div>
+          <div className="developers-info__listing-link">
+            Github
+          </div>
+          <div className="developers-info__listing-link">
+            Documentation
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}

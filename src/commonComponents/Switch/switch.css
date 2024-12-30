@@ -1,0 +1,40 @@
+
+.switch {
+    border-radius: 100px;
+    padding: 8px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    background-color: var(--color-black5);
+    border: 1px solid var(--color-black1)
+}
+
+.switch.small {
+    width: 50px;
+    height: 20px;
+}
+
+.switch.on {
+    justify-content: end;
+}
+
+.switch.off {
+    justify-content: start;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.circle.small {
+    width: 22px;
+    height: 22px;
+}
+
+.circle.on {
+    background: var(--color-gradient2);
+}
+
+.circle.off {
+    background: var(--color-gradient3);
+}

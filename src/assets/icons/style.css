@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'moon-cx';
-  src:  url('fonts/moon-cx.eot?7g5hqi');
-  src:  url('fonts/moon-cx.eot?7g5hqi#iefix') format('embedded-opentype'),
-    url('fonts/moon-cx.ttf?7g5hqi') format('truetype'),
-    url('fonts/moon-cx.woff?7g5hqi') format('woff'),
-    url('fonts/moon-cx.svg?7g5hqi#moon-cx') format('svg');
+  src:  url('fonts/moon-cx.eot?m3pc1u');
+  src:  url('fonts/moon-cx.eot?m3pc1u#iefix') format('embedded-opentype'),
+    url('fonts/moon-cx.ttf?m3pc1u') format('truetype'),
+    url('fonts/moon-cx.woff?m3pc1u') format('woff'),
+    url('fonts/moon-cx.svg?m3pc1u#moon-cx') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,16 +25,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.moon-cx-cross:before {
+  content: "\e909";
+}
+.moon-cx-arrow-down:before {
+  content: "\e905";
+}
 .moon-cx-arrow-right:before {
   content: "\e900";
 }
 .moon-cx-swap-currency:before {
   content: "\e901";
-  color: #76768f;
 }
 .moon-cx-settings:before {
   content: "\e902";
-  color: #525266;
 }
 .moon-cx-locale:before {
   content: "\e903";
@@ -43,12 +47,8 @@
 .moon-cx-change:before {
   content: "\e904";
 }
-.moon-cx-arrow-down:before {
-  content: "\e905";
-}
 .moon-cx-closed-lock:before {
   content: "\e906";
-  color: #fff;
 }
 .moon-cx-opened-lock:before {
   content: "\e907";
