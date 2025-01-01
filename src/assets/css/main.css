@@ -53,6 +53,7 @@ body {
     place-items: start;
     min-width: 320px;
     min-height: 100vh;
+    max-width: 100vw;
     background-color: var(--color-black7);
 }
 

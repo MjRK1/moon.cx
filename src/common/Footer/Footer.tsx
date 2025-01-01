@@ -11,14 +11,17 @@ export const Footer = () => {
           </div>
           <div className="community-info__networks-list">
             <div className="networks-list__xtwitter-icon">
-              X
+              <i className="moon-cx moon-cx-xwitter" />
             </div>
             <div className="networks-list__telegram-icon">
-              Telegram
+              <i className="moon-cx moon-cx-telegram" />
             </div>
           </div>
         </div>
         <div className="footer-info__app-info">
+          <div className="app-info__title">
+            App
+          </div>
           <div className="app-info__trade-link">
             Trade
           </div>
@@ -27,14 +30,29 @@ export const Footer = () => {
           </div>
         </div>
         <div className="footer-info__developers-info">
-          <div className="developers-info__listing-link">
-            Listing
+          <div className="developers-info__info-title">
+            Developers
           </div>
-          <div className="developers-info__listing-link">
-            Github
+          <div className="developers-info__links">
+            <div className="developers-info__listing-link">
+              Listing
+            </div>
+            <div className="developers-info__listing-link">
+              Github
+            </div>
+            <div className="developers-info__listing-link">
+              Documentation
+            </div>
           </div>
-          <div className="developers-info__listing-link">
-            Documentation
+        </div>
+      </div>
+      <div className="footer-locale">
+        <div className="footer-locale__locale-buttons">
+          <div className="footer-locale__icon">
+            <i className="moon-cx moon-cx-locale" />
+          </div>
+          <div className="footer-locale__current-lang">
+            EN
           </div>
         </div>
       </div>
