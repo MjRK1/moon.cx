@@ -6,12 +6,12 @@
     cursor: pointer;
     align-items: center;
     background-color: var(--color-black5);
-    border: 1px solid var(--color-black1)
+    border: 1px solid var(--color-black2)
 }
 
 .switch.small {
-    width: 50px;
-    height: 20px;
+    width: 38px;
+    height: 10px;
 }
 
 .switch.on {
@@ -27,8 +27,8 @@
 }
 
 .circle.small {
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
 }
 
 .circle.on {

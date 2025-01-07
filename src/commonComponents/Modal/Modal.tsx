@@ -35,27 +35,20 @@ export const Modal = (props: IModal) => {
         delay: 0,
       }
     }
-  }
+  };
 
 
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.div
-          variants={overlayVariants}
-          initial="hidden"
-          animate="visible"
-          exit="hidden"
-          className="modal-overlay"
-          onClick={() => setOpen(!isOpen)}
-        >
+        <div className="modal-container">
           <motion.div
             className="modal"
-            style={{width}}
-            initial={{y: '100vh'}}
+            style={{ width }}
+            initial={{ y: '100vh' }}
             animate={{ y: 0 }}
             exit={{ y: '100vh' }}
-            transition={{duration: 0.3}}
+            transition={{ duration: 0.3 }}
           >
             <div className="modal-header">
               <div className="modal-header__title">
@@ -76,7 +69,7 @@ export const Modal = (props: IModal) => {
             {withSuccess && (
               <div className="modal-footer">
                 <Button
-                  style={{width: '100%'}}
+                  style={{ width: '100%' }}
                   onClick={onSuccess}
                 >
                   {successText as string}
@@ -84,8 +77,16 @@ export const Modal = (props: IModal) => {
               </div>
             )}
           </motion.div>
-        </motion.div>
+          <motion.div
+            variants={overlayVariants}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            className="modal-overlay"
+            onClick={() => setOpen(!isOpen)}
+          />
+        </div>
       )}
     </AnimatePresence>
-  )
-}
+  );
+};

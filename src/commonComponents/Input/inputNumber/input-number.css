@@ -7,4 +7,5 @@
 }
 .ant-input-number-input::placeholder {
   font-family: Montserrat, sans-serif;
+  color: #747487 !important;
 }

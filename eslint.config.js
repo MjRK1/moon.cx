@@ -1,9 +1,16 @@
 import { Linter } from "eslint";
 import react from 'eslint-plugin-react'
+import jsxA11y from 'eslint-plugin-jsx-a11y';
+import tsParser from '@typescript-eslint/parser';
+import tseslint from 'typescript-eslint';
 
 const config = {
-  plugins: {react: react},
+  plugins: {
+    react: react,
+    jsxA11y: jsxA11y
+  },
   languageOptions: {
+    parser: tsParser,
     globals: {
       page: true,
       browser: true,
@@ -16,7 +23,7 @@ const config = {
     'jsx-a11y/heading-has-content': 'off',
     'max-len': ['error', { code: 180, comments: 512 }],
     'func-names': ['error', 'as-needed'],
-    semi: ['error', 'always'],
+    'semi': ['error', 'always'],
     'semi-spacing': ['error', { before: false, after: true }],
     'no-else-return': 'error',
     'no-prototype-builtins': 'error',
@@ -54,12 +61,13 @@ const config = {
     'space-before-function-paren': ['error', { anonymous: 'always', named: 'never', asyncArrow: 'always' }],
     'no-lonely-if': 'error',
     'no-console': 'error',
-    quotes: 0,
+    "quotes": 0,
     'quote-props': 0,
-    // остальные правила...
+    ...tseslint.configs['recommended'].rules,
+    ...tseslint.configs['eslint-recommended'],
   },
-  ignores: ['.eslintrc.config.js', 'vite.config.ts'],
-  files: ['*.ts', '*.tsx'],
+  ignores: ['eslint.config.js', 'vite.config.ts'],
+  files: ['**/*.ts', '**/*.tsx'],
 
 };
 

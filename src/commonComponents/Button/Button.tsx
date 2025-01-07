@@ -47,4 +47,4 @@ export const Button = (props: IButton) => {
       {children}
     </button>
   );
-}
+};

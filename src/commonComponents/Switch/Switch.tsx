@@ -4,7 +4,7 @@ import cn from 'classnames';
 import { ISwitch } from 'types/commonComponents';
 
 export const Switch = (props: ISwitch) => {
-  const { isOn, size = 's', style } = props;
+  const { isOn, size = 's', style, onClick } = props;
   return (
     <motion.div
       layout
@@ -15,6 +15,7 @@ export const Switch = (props: ISwitch) => {
         'on': isOn,
         'off': !isOn
       })}
+      onClick={onClick}
       style={style as MotionStyle}
     >
       <motion.div
@@ -28,5 +29,5 @@ export const Switch = (props: ISwitch) => {
         })}
       />
     </motion.div>
-  )
-}
+  );
+};

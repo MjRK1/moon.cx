@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'moon-cx';
-  src:  url('fonts/moon-cx.eot?uiw7yq');
-  src:  url('fonts/moon-cx.eot?uiw7yq#iefix') format('embedded-opentype'),
-    url('fonts/moon-cx.ttf?uiw7yq') format('truetype'),
-    url('fonts/moon-cx.woff?uiw7yq') format('woff'),
-    url('fonts/moon-cx.svg?uiw7yq#moon-cx') format('svg');
+  src:  url('fonts/moon-cx.eot?imtuos');
+  src:  url('fonts/moon-cx.eot?imtuos#iefix') format('embedded-opentype'),
+    url('fonts/moon-cx.ttf?imtuos') format('truetype'),
+    url('fonts/moon-cx.woff?imtuos') format('woff'),
+    url('fonts/moon-cx.svg?imtuos#moon-cx') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.moon-cx-connect-wallet:before {
+  content: "\e90c";
+}
 .moon-cx-telegram:before {
   content: "\e90a";
 }

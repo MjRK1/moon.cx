@@ -1,16 +1,20 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import { Footer } from 'common/Footer';
+import { Header } from 'common/Header';
 
 export const RouteLayout = () => {
-
   return (
     <div className="route-layout">
-      Header
+      <header>
+        <Header />
+      </header>
       <main className="content">
         <Outlet />
       </main>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
-  )
-}
+  );
+};

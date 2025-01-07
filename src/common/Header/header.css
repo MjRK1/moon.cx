@@ -1,0 +1,104 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 6.625rem;
+    padding-right: 6.625rem;
+    border-bottom: 1px solid var(--color-black1);
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.logo-icon {
+    font-size: 1.6rem;
+    width: 26px;
+    height: 33px;
+    margin-right: 10px;
+    background: linear-gradient(-90deg, rgba(191,148,242,1) 0%, rgba(150,211,248,1) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.logo-title {
+    font-size: var(--font-size5);
+    font-weight: 700;
+    background: linear-gradient(-90deg, rgba(191,148,242,1) 0%, rgba(150,211,248,1) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.header__header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation__navigation-tab {
+    margin-right: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+}
+.header-navigation__navigation-tab:last-child {
+    margin-right: 0px;
+}
+.navigation-tab__title {
+    color: var(--color-black1);
+    font-size: var(--font-size3);
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+.navigation-tab__title--active {
+    color: var(--color-white);
+    font-size: var(--font-size3);
+}
+
+.navigation-tab__active-underline {
+    display: flex;
+    justify-self: center;
+    width: 24px;
+    height: 4px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: var(--color-gradient1);
+}
+.navigation-tab__inactive-underline {
+    width: 24px;
+    height: 4px;
+}
+
+.header__header-connect-wallet {
+    display: flex;
+    align-items: center;
+}
+.header-connect-wallet__locale {
+    margin-right: 15px;
+    font-size: 1.25rem;
+    width: 20px;
+    height: 22px;
+    color: var(--color-black1);
+    cursor: pointer;
+    transition: .2s;
+}
+.header-connect-wallet__locale:hover {
+    color: var(--color-white);
+}
+.header-connect-wallet__connect-wallet-btn {
+    width: 200px;
+}
+.connect-wallet-btn__icon {
+    margin-right: 10px;
+}
+.connect-wallet-btn__title {
+    font-size: var(--font-size2);
+    font-weight: 600;
+}

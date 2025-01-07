@@ -1,0 +1,77 @@
+.trade-swap-settings__button {
+    color: var(--color-black1);
+    cursor: pointer;
+    font-size: var(--font-size3);
+    width: 20px;
+    height: 20px;
+    transition: .2s;
+    background-color: transparent;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+}
+
+.trade-swap-settings__button:hover {
+    background: linear-gradient(-45deg, rgba(145,249,247,1) 0%, rgba(191,148,242,1) 52%, rgba(249,200,165,1) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.trade-swap-slippage__title {
+    font-size: var(--font-size3);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.trade-swap-slippage__description {
+    color: var(--color-black1);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.0625rem;
+    margin-bottom: 25px;
+}
+.trade-swap-slippage__slippage-percentage-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.slippage-percentage-button {
+    display: flex;
+    justify-content: center;
+    width: 133px;
+    background: var(--color-black2);
+    color: var(--color-white);
+    padding: 7px 0;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+.slippage-percentage-button--active {
+    background: var(--color-gradient1);
+    color: var(--color-black6);
+}
+.trade-swap-slippage__slippage-percentage-input {
+    margin-bottom: 25px;
+}
+
+.trade-swap-settings-content__trade-swap-expert-mode {
+    border-top: 1px solid var(--color-black2);
+    padding-top: 25px;
+}
+.trade-swap-expert-mode__expert-mode-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.expert-mode-header__title {
+    font-size: var(--font-size3);
+    font-weight: 600;
+}
+.trade-swap-expert-mode__description {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.0625rem;
+    color: var(--color-black1);
+}

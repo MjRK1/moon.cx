@@ -1,7 +1,6 @@
 import React from 'react';
 
 export const Footer = () => {
-
   return (
     <div className="footer">
       <div className="footer-info">
@@ -57,5 +56,5 @@ export const Footer = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

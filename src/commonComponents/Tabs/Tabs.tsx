@@ -34,5 +34,5 @@ export const Tabs = (props: ITabs) => {
         </div>
       )}
     </div>
-  )
-}
+  );
+};

@@ -1,5 +1,6 @@
 import { TargetAndTransition, VariantLabels } from 'motion/react';
 import React, { CSSProperties, ReactNode } from 'react';
+import { InputNumberProps } from 'antd';
 
 export interface IButton {
   id?: string,
@@ -9,7 +10,7 @@ export interface IButton {
   theme?: string,
   stretched?: boolean,
   form?: string,
-  children?: JSX.Element | string,
+  children?: ReactNode | string,
   style?: CSSProperties,
   className?: string,
   loading?: boolean | undefined,
@@ -26,10 +27,10 @@ export interface IInputText {
   suffix: ReactNode,
   placeholder?: string
 }
-export interface IInputNumber {
+export interface IInputNumber extends InputNumberProps {
   style?: CSSProperties,
-  value?: number,
-  onChange: (value: number | string) => void,
+  value?: number | null,
+  onChange: (value: number | string | null) => void,
   placeholder?: string
 }
 
@@ -44,7 +45,7 @@ export interface ISelectOption {
   description: string,
   tooltip?: string,
   hidden: boolean,
-  value: string | number | null ,
+  value: string | number | null,
   className: string,
   disabled: boolean
 }
@@ -73,7 +74,7 @@ export interface ISelect {
 export interface ISwitch {
   isOn: boolean,
   onClick: () => void,
-  size: 's' | 'm' | 'l',
+  size?: 's' | 'm' | 'l',
   style?: CSSProperties,
 }
 
