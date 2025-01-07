@@ -2,7 +2,7 @@ import React, { ForwardedRef } from 'react';
 import { InputNumber } from 'commonComponents/Input/inputNumber';
 import { ICurrencyCardProps } from 'types/tradeSwap';
 import cn from 'classnames';
-import { motion } from 'motion/react';
+import { motion, MotionStyle } from 'motion/react';
 
 
 // eslint-disable-next-line react/display-name
@@ -36,7 +36,7 @@ const SwapCurrencyCard = React.forwardRef(
     return (
       <motion.div
         className="swap-currency-card"
-        style={{...style}}
+        style={{...style} as MotionStyle}
         ref={ref}
       >
         <div className="swap-currency-card-header">
