@@ -6,6 +6,7 @@ import { IInputNumber } from 'types/commonComponents';
 export const InputNumber = (props: IInputNumber) => {
   const {
     style = {width: '100%'},
+    isOutlined = true,
   } = props;
   return (
     <ConfigProvider
@@ -14,13 +15,13 @@ export const InputNumber = (props: IInputNumber) => {
           components: {
             InputNumber: {
               activeShadow: 'none',
-              activeBorderColor: 'var(--color-black2)'
+              activeBorderColor: isOutlined ? 'var(--color-black2)' : 'transparent'
             }
           },
           token: {
-            colorPrimary: 'var(--color-black4)',
+            colorPrimary: isOutlined ? 'var(--color-black4)' : 'transparent',
             colorErrorHover: '#FF7474',
-            colorPrimaryHover: 'var(--color-black2)',
+            colorPrimaryHover: isOutlined ? 'var(--color-black2)' : 'transparent',
             colorText: 'var(--color-white)',
             colorTextQuaternary: 'var(--color-white)',
             fontSize: 16,
@@ -28,8 +29,8 @@ export const InputNumber = (props: IInputNumber) => {
             colorBgContainer: 'var(--color-black3)',
             controlHeight: 36,
             colorBgElevated: 'var(--color-black2)',
-            colorBorder: 'var(--color-black2)',
-            colorBorderSecondary: 'var(--color-black2)',
+            colorBorder: isOutlined ? 'var(--color-black2)' : 'transparent',
+            colorBorderSecondary: isOutlined ? 'var(--color-black2)' : 'transparent',
             colorIcon: 'var(--color-white)',
           }
         }
@@ -38,7 +39,7 @@ export const InputNumber = (props: IInputNumber) => {
       {/*@ts-ignore*/}
       <InputNumberAntd
         {...props}
-        style={{...style, fontSize: 16}}
+        style={{...style}}
       />
     </ConfigProvider>
   );

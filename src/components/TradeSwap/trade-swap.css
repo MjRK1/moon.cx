@@ -1,0 +1,24 @@
+.trade-swap {
+    position: relative;
+    width: 460px;
+}
+.trade-swap__currency-cards {
+    position: relative;
+    width: 100%;
+}
+.trade-swap__swap-button {
+    position: absolute;
+    top: 100px;
+    left: 44%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--color-black6);
+    border: 8px solid var(--color-black7);
+    color: #76768F;
+    cursor: pointer;
+    z-index: 10;
+}

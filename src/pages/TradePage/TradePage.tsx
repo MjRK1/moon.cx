@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Tabs } from 'commonComponents/Tabs';
 import { Tab } from 'types/commonComponents';
 import { TradeSwapSettings } from 'components/TradeSwap/TradeSwapSettings';
+import { TradeSwap } from 'components/TradeSwap';
 
 
 const TRADE_TABS: Tab[] = [
@@ -9,7 +10,7 @@ const TRADE_TABS: Tab[] = [
     id: 1,
     name: 'swap',
     title: 'Swap',
-    content: (<div>swap</div>),
+    content: (<TradeSwap />),
     additionalTabContent: <TradeSwapSettings />
   },
   {
@@ -36,6 +37,9 @@ export const TradePage = () => {
           onTabChange={handleTabChange}
           currentTab={currentTab}
         />
+      </div>
+      <div className="trade-page-tab__content">
+        {currentTab.content}
       </div>
     </div>
   );

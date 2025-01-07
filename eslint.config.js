@@ -65,6 +65,7 @@ const config = {
     'quote-props': 0,
     ...tseslint.configs['recommended'].rules,
     ...tseslint.configs['eslint-recommended'],
+    ...react.configs.recommended.rules,
   },
   ignores: ['eslint.config.js', 'vite.config.ts'],
   files: ['**/*.ts', '**/*.tsx'],

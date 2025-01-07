@@ -3,7 +3,7 @@ import { Input as InputTextAntd, ConfigProvider } from 'antd';
 import { IInputText } from 'types/commonComponents';
 
 
-export const InputText = React.forwardRef((props: IInputText) => {
+export const InputText = (props: IInputText) => {
   const { style = { width: '100%' } } = props;
   return (
     <ConfigProvider
@@ -33,4 +33,4 @@ export const InputText = React.forwardRef((props: IInputText) => {
       />
     </ConfigProvider>
   );
-});
+};

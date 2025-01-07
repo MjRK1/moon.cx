@@ -1,3 +1,3 @@
 import './swap-currency-card.css';
 
-export { SwapCurrencyCard } from './SwapCurrencyCard';
+export { MotionSwapCurrencyCard } from './SwapCurrencyCard';

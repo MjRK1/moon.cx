@@ -60,7 +60,11 @@ export const Header = () => {
               {tab?.title}
             </div>
             {window.location.pathname === tab.path && (
-              <motion.div layoutId="underline" layout className="navigation-tab__active-underline" />
+              <motion.div
+                layoutId="underline"
+                layout
+                className="navigation-tab__active-underline"
+              />
             )}
             {window.location.pathname !== tab.path && (
               <div className="navigation-tab__inactive-underline" />

@@ -77,6 +77,7 @@ export const TradeSwapSettings = () => {
             <div className="trade-swap-slippage__slippage-percentage-buttons">
               {PERCENTAGE_BUTTONS.map((item) => (
                 <div
+                  key={item.id}
                   className={cn('slippage-percentage-button', {
                     'slippage-percentage-button--active': currentPercentage.id === item.id
                   })}

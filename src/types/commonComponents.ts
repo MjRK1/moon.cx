@@ -30,6 +30,7 @@ export interface IInputText {
 export interface IInputNumber extends InputNumberProps {
   style?: CSSProperties,
   value?: number | null,
+  isOutlined?: boolean
   onChange: (value: number | string | null) => void,
   placeholder?: string
 }

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'moon-cx';
-  src:  url('fonts/moon-cx.eot?imtuos');
-  src:  url('fonts/moon-cx.eot?imtuos#iefix') format('embedded-opentype'),
-    url('fonts/moon-cx.ttf?imtuos') format('truetype'),
-    url('fonts/moon-cx.woff?imtuos') format('woff'),
-    url('fonts/moon-cx.svg?imtuos#moon-cx') format('svg');
+  src:  url('fonts/moon-cx.eot?folf0m');
+  src:  url('fonts/moon-cx.eot?folf0m#iefix') format('embedded-opentype'),
+    url('fonts/moon-cx.ttf?folf0m') format('truetype'),
+    url('fonts/moon-cx.woff?folf0m') format('woff'),
+    url('fonts/moon-cx.svg?folf0m#moon-cx') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.moon-cx-currency-quantity:before {
+  content: "\e90d";
+}
 .moon-cx-connect-wallet:before {
   content: "\e90c";
 }
@@ -40,9 +43,6 @@
 .moon-cx-arrow-down:before {
   content: "\e905";
 }
-.moon-cx-arrow-right:before {
-  content: "\e900";
-}
 .moon-cx-swap-currency:before {
   content: "\e901";
 }
@@ -51,9 +51,6 @@
 }
 .moon-cx-locale:before {
   content: "\e903";
-}
-.moon-cx-change:before {
-  content: "\e904";
 }
 .moon-cx-closed-lock:before {
   content: "\e906";
