@@ -9,7 +9,7 @@
 }
 .tab {
     background: var(--color-black6);
-    font-size: var(--font-size2);
+    font-size: var(--font-size16);
     font-weight: 600;
     display: flex;
     justify-content: center;

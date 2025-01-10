@@ -1,7 +1,7 @@
 .trade-swap-settings__button {
     color: var(--color-black1);
     cursor: pointer;
-    font-size: var(--font-size3);
+    font-size: var(--font-size18);
     width: 20px;
     height: 20px;
     transition: .2s;
@@ -17,13 +17,13 @@
     background-clip: text;
 }
 .trade-swap-slippage__title {
-    font-size: var(--font-size3);
+    font-size: var(--font-size18);
     font-weight: 600;
     margin-bottom: 15px;
 }
 .trade-swap-slippage__description {
     color: var(--color-black1);
-    font-size: 0.875rem;
+    font-size: var(--font-size14);
     font-weight: 500;
     line-height: 1.0625rem;
     margin-bottom: 25px;
@@ -66,11 +66,11 @@
     margin-bottom: 15px;
 }
 .expert-mode-header__title {
-    font-size: var(--font-size3);
+    font-size: var(--font-size18);
     font-weight: 600;
 }
 .trade-swap-expert-mode__description {
-    font-size: 0.875rem;
+    font-size: var(--font-size14);
     font-weight: 500;
     line-height: 1.0625rem;
     color: var(--color-black1);

@@ -37,7 +37,7 @@
 
 }
 .modal-header__title {
-    font-size: var(--font-size5);
+    font-size: var(--font-size22);
     font-weight: 500;
 }
 
@@ -45,7 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: var(--font-size3);
+    font-size: var(--font-size18);
     width: 18px;
     height: 18px;
     background: linear-gradient(15deg, rgba(145,249,247,1) 0%, rgba(191,148,242,1) 52%, rgba(249,200,165,1) 100%);

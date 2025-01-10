@@ -24,7 +24,7 @@ const SwapCurrencyCard = React.forwardRef(
             style={{
               width: '70%',
               backgroundColor: 'var(--color-black6)',
-              fontSize: 'var(--font-size6)',
+              fontSize: 'var(--font-size26)',
             }}
             onChange={(value) => onChangeCurrencyAmount(currency, value as number)}
           />

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { MotionSwapCurrencyCard } from 'components/TradeSwap/SwapCurrencyCard';
 import { ICurrency } from 'types/tradeSwap';
 import { motion } from 'motion/react';
+import { SwapDetails } from 'components/TradeSwap/SwapDetails';
+import { Button } from 'commonComponents/Button';
 
 
 export const TradeSwap = () => {
@@ -71,6 +73,10 @@ export const TradeSwap = () => {
           initial={{ rotate: 0 }}
           animate={{
             rotate: currencyList[0].role === 'send' ? 0 : 180,
+            transition: {
+              delay: 0.1,
+              duration: 0.2
+            }
           }}
           whileHover={{
             // rotate: 180,
@@ -98,6 +104,10 @@ export const TradeSwap = () => {
           onChangeCurrencyAmount={handleChangeCurrencyAmount}
         />
       </div>
+      <SwapDetails />
+      <Button style={{width: '100%', marginTop: 10}}>
+        Swap
+      </Button>
     </div>
   );
 };

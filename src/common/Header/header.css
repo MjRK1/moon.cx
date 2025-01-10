@@ -27,7 +27,7 @@
     background-clip: text;
 }
 .logo-title {
-    font-size: var(--font-size5);
+    font-size: var(--font-size22);
     font-weight: 700;
     background: linear-gradient(-90deg, rgba(191,148,242,1) 0%, rgba(150,211,248,1) 100%);
     color: transparent;
@@ -53,7 +53,7 @@
 }
 .navigation-tab__title {
     color: var(--color-black1);
-    font-size: var(--font-size3);
+    font-size: var(--font-size18);
     font-weight: 500;
     cursor: pointer;
     margin-bottom: 24px;
@@ -61,7 +61,7 @@
 }
 .navigation-tab__title--active {
     color: var(--color-white);
-    font-size: var(--font-size3);
+    font-size: var(--font-size18);
 }
 
 .navigation-tab__active-underline {
@@ -103,6 +103,6 @@
     margin-right: 10px;
 }
 .connect-wallet-btn__title {
-    font-size: var(--font-size2);
+    font-size: var(--font-size16);
     font-weight: 600;
 }

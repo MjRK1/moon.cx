@@ -105,3 +105,9 @@ export interface ITabs {
   onTabChange: (tab: Tab) => void,
   currentTab: Tab,
 }
+
+export interface ICollapseProps {
+  isOpen: boolean,
+  children: ReactNode,
+  header: ReactNode,
+}

@@ -12,7 +12,7 @@
     margin-bottom: 10px;
 }
 .swap-currency-card-header__label {
-    font-size: 0.875rem;
+    font-size: var(--font-size14);
     color: var(--color-black0);
     font-weight: 500;
 }
@@ -29,7 +29,7 @@
     margin-right: 5px;
 }
 .wallet-currency-quantity__value {
-    font-size: 0.875rem;
+    font-size: var(--font-size14);
     font-weight: 500;
 }
 
@@ -56,7 +56,7 @@
 
 }
 .currency-selection__currency-title {
-    font-size: var(--font-size6);
+    font-size: var(--font-size26);
     font-weight: 600;
     margin-right: 15px;
 }
@@ -65,7 +65,7 @@
     font-size: 14px;
 }
 .swap-currency-card-selection__currency-amount {
-    font-size: var(--font-size6);
+    font-size: var(--font-size26);
     width: 70%;
     display: flex;
     justify-content: end;
@@ -79,6 +79,6 @@
 .swap-currency-card-amount-equivalent {
     display: flex;
     justify-content: end;
-    font-size: 0.875rem;
+    font-size: var(--font-size14);
     color: var(--color-black0);
 }
