@@ -2,8 +2,8 @@ import { CSSProperties } from 'react';
 
 export interface ICurrency {
   id: number,
-  currencyValue: string,
-  currencyTitle: string,
+  name: string,
+  title: string,
   image: string,
   amount: number,
   walletAmount: number,
@@ -14,5 +14,18 @@ export interface ICurrency {
 export interface ICurrencyCardProps {
   currency: ICurrency,
   onChangeCurrencyAmount: (currency: ICurrency, value: number) => void,
+  mode: 'confirm' | 'swap',
   style?: CSSProperties,
+}
+
+export interface ISwapDetailsProps {
+  defaultOpen?: boolean,
+}
+
+export interface IConfirmSwapModalProps {
+  isOpen: boolean,
+  onClose: () => void,
+  onSuccess: () => void,
+  receivedCurrency: ICurrency,
+  sendCurrency: ICurrency,
 }

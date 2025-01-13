@@ -16,6 +16,10 @@
     -webkit-background-clip: text;
     background-clip: text;
 }
+.trade-swap-settings-content {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
 .trade-swap-slippage__title {
     font-size: var(--font-size18);
     font-weight: 600;

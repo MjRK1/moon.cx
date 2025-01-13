@@ -58,7 +58,6 @@ export const TradeSwapSettings = () => {
       </div>
       <Modal
         isOpen={isSettingsOpen}
-        setOpen={setSettingsOpen}
         title="Advanced Settings"
         withCross
         withSuccess

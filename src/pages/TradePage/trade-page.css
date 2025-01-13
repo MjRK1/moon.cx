@@ -12,3 +12,9 @@
     justify-content: start;
     margin-bottom: 15px;
 }
+.limit-additional-tab-content {
+    font-size: var(--font-size16);
+    font-weight: 600;
+    color: var(--color-black0);
+    user-select: none;
+}

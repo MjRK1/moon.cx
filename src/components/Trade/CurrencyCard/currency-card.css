@@ -80,5 +80,11 @@
     display: flex;
     justify-content: end;
     font-size: var(--font-size14);
+    font-weight: 500;
     color: var(--color-black0);
+}
+.swap-currency-card-amount-additional-percent {
+    color: var(--color-blue1);
+    margin-left: 5px;
+    font-weight: 500;
 }

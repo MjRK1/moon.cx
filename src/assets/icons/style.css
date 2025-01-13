@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'moon-cx';
-  src:  url('fonts/moon-cx.eot?ymugiv');
-  src:  url('fonts/moon-cx.eot?ymugiv#iefix') format('embedded-opentype'),
-    url('fonts/moon-cx.ttf?ymugiv') format('truetype'),
-    url('fonts/moon-cx.woff?ymugiv') format('woff'),
-    url('fonts/moon-cx.svg?ymugiv#moon-cx') format('svg');
+  src:  url('fonts/moon-cx.eot?o3b17i');
+  src:  url('fonts/moon-cx.eot?o3b17i#iefix') format('embedded-opentype'),
+    url('fonts/moon-cx.ttf?o3b17i') format('truetype'),
+    url('fonts/moon-cx.woff?o3b17i') format('woff'),
+    url('fonts/moon-cx.svg?o3b17i#moon-cx') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.moon-cx-closed-lock:before {
+  content: "\e904";
+}
 .moon-cx-currency-quantity:before {
   content: "\e90d";
 }
@@ -54,9 +57,6 @@
 }
 .moon-cx-locale:before {
   content: "\e903";
-}
-.moon-cx-closed-lock:before {
-  content: "\e906";
 }
 .moon-cx-opened-lock:before {
   content: "\e907";

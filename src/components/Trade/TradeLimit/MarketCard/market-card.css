@@ -1,0 +1,78 @@
+.market-card {
+    width: 70%;
+    height: auto;
+    background-color: var(--color-black6);
+    padding: 15px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+.market-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-grey0);
+    margin-bottom: 5px;
+    font-size: var(--font-size14);
+}
+.market-card-header__title {
+    font-weight: 600;
+    padding: 3px 5px;
+    background-color: var(--color-black4);
+    border-radius: 7px;
+}
+.market-card-header__swapped-currency {
+    font-weight: 500;
+}
+.market-card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.market-card-body__received-currency {
+    font-size: var(--font-size20);
+    font-weight: 600;
+}
+.market-card-body__rate {
+    display: flex;
+    justify-content: end;
+    width: 70%;
+}
+.market-card-body__rate > .ant-input-number > .ant-input-number-input-wrap > input {
+    text-align: right;
+    padding: 0;
+    font-weight: 600;
+    font-size: var(--font-size20);
+}
+.market-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 5px;
+}
+.market-card-footer__rate-controls {
+    display: flex;
+}
+.rate-controls__percent-btn {
+    padding: 4px 15px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-black4);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--font-size14);
+    font-weight: 600;
+    color: var(--color-grey0);
+}
+.rate-controls__percent-btn:first-child {
+    margin-right: 10px;
+}
+
+.market-card-footer__equivalent {
+    position: relative;
+    bottom: 10px;
+    font-size: var(--font-size14);
+    font-weight: 500;
+    color: var(--color-black0);
+}

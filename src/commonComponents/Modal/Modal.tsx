@@ -7,7 +7,6 @@ import { Button } from 'commonComponents/Button';
 export const Modal = (props: IModal) => {
   const {
     isOpen,
-    setOpen,
     title,
     width = 460,
     withCross,
@@ -55,12 +54,13 @@ export const Modal = (props: IModal) => {
                 {title}
               </div>
               {withCross && (
-                <div
+                <motion.div
                   className="modal-header__close-btn"
                   onClick={onClose}
+                  whileHover={{rotate: -90, transition: { duration: 0.3, type: 'tween'}}}
                 >
                   <i className="moon-cx moon-cx-cross" />
-                </div>
+                </motion.div>
               )}
             </div>
             <div className="modal-content">
@@ -83,7 +83,7 @@ export const Modal = (props: IModal) => {
             animate="visible"
             exit="hidden"
             className="modal-overlay"
-            onClick={() => setOpen(!isOpen)}
+            onClick={() => onClose()}
           />
         </div>
       )}

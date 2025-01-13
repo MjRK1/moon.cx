@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,12 +33,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 15px;
+    padding: 20px 15px 0;
 
 }
 .modal-header__title {
     font-size: var(--font-size22);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .modal-header__close-btn {
@@ -56,9 +56,9 @@
 }
 
 .modal-content {
-    padding: 20px 15px;
+    padding: 0 15px;
 }
 
 .modal-footer {
-    padding: 20px 15px;
+    padding: 0 15px 20px;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Collapse } from 'commonComponents/Collapse';
+import { ISwapDetailsProps } from 'types/tradeSwap';
 
 
 const SWAP_DETAILS_ITEMS = [
@@ -21,8 +22,12 @@ const SWAP_DETAILS_ITEMS = [
   }
 ];
 
-export const SwapDetails = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+export const SwapDetails = (props: ISwapDetailsProps) => {
+  const {
+    defaultOpen = false
+  } = props;
+
+  const [isOpen, setIsOpen] = useState<boolean>(defaultOpen);
 
   const renderCollapseHeader = () => {
     return (

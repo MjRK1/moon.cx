@@ -26,6 +26,9 @@
     --font-size22: 1.375rem; /* 22px */
     --font-size26: 1.625rem; /* 26px */
 
+    --color-grey0: #76768F;
+    --color-grey4: #34343E;
+
     --color-black0: #525266;
     --color-black1: #47475C;
     --color-black2: #24242D;
@@ -34,11 +37,17 @@
     --color-black5: #151618;
     --color-black6: #121217;
     --color-black7: #0C0C12;
-    --color-white: FFFFFF;
+
+    --color-white: #FFFFFF;
+
     --color-blue1: #9DC9F7;
+
     --color-green: #20B55C;
+
     --color-red: #F53535;
+
     --color-purple: #BE97F2;
+
     --color-gradient1: linear-gradient(-45deg, rgba(191,148,242,1) 0%, rgba(150,211,248,1) 100%);
     --color-gradient2: linear-gradient(-45deg, rgba(145,249,247,1) 0%, rgba(191,148,242,1) 52%, rgba(249,200,165,1) 100%);
     --color-gradient3: linear-gradient(0deg, rgba(36,36,45,1) 0%, rgba(68,68,83,1) 83%);

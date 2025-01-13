@@ -28,6 +28,7 @@ export interface IInputText {
   placeholder?: string
 }
 export interface IInputNumber extends InputNumberProps {
+  ref?: React.Ref<HTMLInputElement>;
   style?: CSSProperties,
   value?: number | null,
   isOutlined?: boolean
@@ -81,7 +82,6 @@ export interface ISwitch {
 
 export interface IModal {
   isOpen: boolean,
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>,
   title: string,
   withCross: boolean,
   withSuccess: boolean,

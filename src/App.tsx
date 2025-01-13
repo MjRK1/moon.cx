@@ -10,6 +10,7 @@ function App() {
     <Routes>
       <Route path="/" element={<RouteLayout/>} >
         <Route path="/trade" element={<TradePage />} />
+        <Route path="/trade/:type" element={<TradePage />} />
         <Route path="/pools" element={<div>pools</div>} />
 
 

@@ -6,16 +6,17 @@ import { motion, MotionStyle } from 'motion/react';
 
 
 // eslint-disable-next-line react/display-name
-const SwapCurrencyCard = React.forwardRef(
+const CurrencyCard = React.forwardRef(
   (props: ICurrencyCardProps, ref: ForwardedRef<HTMLDivElement>) => {
     const {
       currency,
       style,
+      mode,
       onChangeCurrencyAmount
     } = props;
 
     const renderCurrencyAmount = () => {
-      if (currency?.role === 'send') {
+      if (currency?.role === 'send' && mode === 'swap') {
         return (
           <InputNumber
             isOutlined={false}
@@ -62,11 +63,13 @@ const SwapCurrencyCard = React.forwardRef(
               <img src={currency.image} alt="usdt" />
             </div>
             <div className="currency-selection__currency-title">
-              {currency.currencyTitle}
+              {currency.title}
             </div>
-            <div className="currency-selection__arrow-icon">
-              <i className="moon-cx moon-cx-arrow-down" />
-            </div>
+            {mode === 'swap' && (
+              <div className="currency-selection__arrow-icon">
+                <i className="moon-cx moon-cx-arrow-down" />
+              </div>
+            )}
           </div>
           <div className="swap-currency-card-selection__currency-amount">
             {renderCurrencyAmount()}
@@ -74,9 +77,14 @@ const SwapCurrencyCard = React.forwardRef(
         </div>
         <div className="swap-currency-card-amount-equivalent">
           ${currency.equivalent}
+          {currency.role === 'receive' && mode === 'confirm' && (
+            <div className="swap-currency-card-amount-additional-percent">
+              / 2.36%
+            </div>
+          )}
         </div>
       </motion.div>
     );
 });
 
-export const MotionSwapCurrencyCard = motion.create(SwapCurrencyCard);
+export const MotionCurrencyCard = motion.create(CurrencyCard);

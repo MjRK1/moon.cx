@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
-import { MotionSwapCurrencyCard } from 'components/TradeSwap/SwapCurrencyCard';
+import { MotionCurrencyCard } from 'src/components/Trade/CurrencyCard';
 import { ICurrency } from 'types/tradeSwap';
 import { motion } from 'motion/react';
-import { SwapDetails } from 'components/TradeSwap/SwapDetails';
+import { SwapDetails } from 'components/Trade/TradeSwap/SwapDetails';
 import { Button } from 'commonComponents/Button';
+import { ConfirmSwapModal } from 'components/Trade/TradeSwap/ConfirmSwapModal';
 
 
 export const TradeSwap = () => {
   const [currencyList, setCurrencyList] = useState<ICurrency[]>([
     {
       id: 1,
-      currencyValue: 'USDT',
-      currencyTitle: 'USD₮',
+      name: 'USDT',
+      title: 'USD₮',
       amount: 1000,
       image: '/USDT_IMAGE.png',
       equivalent: 1000,
@@ -20,8 +21,8 @@ export const TradeSwap = () => {
     },
     {
       id: 2,
-      currencyValue: 'TON',
-      currencyTitle: 'TON',
+      name: 'TON',
+      title: 'TON',
       amount: 1000,
       image: '/TON_IMAGE.png',
       equivalent: 1000,
@@ -29,6 +30,7 @@ export const TradeSwap = () => {
       role: 'receive'
     },
   ]);
+  const [isConfirmOpen, setConfirmOpen] = useState<boolean>(false);
 
   const handleSwitchCurrencies = () => {
     const newCurrencyList: ICurrency[] = currencyList.map(item => {
@@ -52,7 +54,7 @@ export const TradeSwap = () => {
   return (
     <div className="trade-swap">
       <div className="trade-swap__currency-cards">
-        <MotionSwapCurrencyCard
+        <MotionCurrencyCard
           key="send-currency"
           currency={currencyList[0]}
           initial={{
@@ -89,7 +91,7 @@ export const TradeSwap = () => {
         >
           <i className="moon-cx moon-cx-swap-currency" />
         </motion.div>
-        <MotionSwapCurrencyCard
+        <MotionCurrencyCard
           key="received-currency"
           currency={currencyList[1]}
           initial={{
@@ -105,9 +107,19 @@ export const TradeSwap = () => {
         />
       </div>
       <SwapDetails />
-      <Button style={{width: '100%', marginTop: 10}}>
+      <Button
+        style={{width: '100%', marginTop: 10}}
+        onClick={() => setConfirmOpen(true)}
+      >
         Swap
       </Button>
+      <ConfirmSwapModal
+        isOpen={isConfirmOpen}
+        onClose={() => setConfirmOpen(false)}
+        onSuccess={() => setConfirmOpen(false)}
+        receivedCurrency={currencyList.find(item => item.role === 'receive') || currencyList[0]}
+        sendCurrency={currencyList.find(item => item.role === 'send') || currencyList[1]}
+      />
     </div>
   );
 };
