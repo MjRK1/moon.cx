@@ -6,8 +6,13 @@ import { motion } from 'motion/react';
 
 export const MarketCard = (props: IMarketCardProps) => {
   const {
-    orderParameters
+    orderParameters,
+    onRateChange,
   } = props;
+
+  const handeMultiplyRate = (percent: number) => {
+    onRateChange(orderParameters?.rate as number * (1 + (percent / 100)));
+  };
 
   return (
     <div className="market-card">
@@ -28,13 +33,14 @@ export const MarketCard = (props: IMarketCardProps) => {
             isOutlined={false}
             value={orderParameters?.rate}
             controls={false}
+            precision={6}
             style={{
-              width: '70%',
+              width: '100%',
               backgroundColor: 'var(--color-black6)',
               fontWeight: 600,
               fontSize: 'var(--font-size20)',
             }}
-            onChange={() => {}}
+            onChange={(value) => onRateChange(value as number)}
           />
         </div>
       </div>
@@ -43,12 +49,14 @@ export const MarketCard = (props: IMarketCardProps) => {
           <motion.div
             className="rate-controls__percent-btn"
             whileTap={{scale: 0.95}}
+            onClick={() => handeMultiplyRate(1)}
           >
             +1%
           </motion.div>
           <motion.div
             className="rate-controls__percent-btn"
             whileTap={{scale: 0.95}}
+            onClick={() => handeMultiplyRate(5)}
           >
             +5%
           </motion.div>

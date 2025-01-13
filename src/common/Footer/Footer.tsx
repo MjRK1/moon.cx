@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="footer">
       <div className="footer-info">
@@ -21,10 +24,16 @@ export const Footer = () => {
           <div className="app-info__title">
             App
           </div>
-          <div className="app-info__trade-link">
+          <div
+            className="app-info__trade-link"
+            onClick={() => navigate('/trade')}
+          >
             Trade
           </div>
-          <div className="app-info__pools-link">
+          <div
+            className="app-info__pools-link"
+            onClick={() => navigate('/pools')}
+          >
             Pools
           </div>
         </div>

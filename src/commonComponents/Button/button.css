@@ -41,6 +41,16 @@
     color: var(--color-black6);
 }
 
+.c-button--theme-dark {
+    outline: none;
+    background: var(--color-black6);
+    color: var(--color-white);
+    transition: .2s;
+}
+.c-button--theme-dark:hover {
+    background-color: var(--color-black2);
+    color: var(--color-blue1);
+}
 .c-button--size-s {
     min-width: 125px;
     padding-right: 0.8rem;

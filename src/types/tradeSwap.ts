@@ -20,9 +20,13 @@ export interface ICurrencyCardProps {
 
 export interface ISwapDetailsProps {
   defaultOpen?: boolean,
+  title: string,
 }
 
 export interface IConfirmSwapModalProps {
+  title: string,
+  successText: string,
+  detailsTitle: string,
   isOpen: boolean,
   onClose: () => void,
   onSuccess: () => void,

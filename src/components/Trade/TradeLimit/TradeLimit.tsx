@@ -6,6 +6,9 @@ import { MarketCard } from 'components/Trade/TradeLimit/MarketCard';
 import { Expiry, IOrderParameters } from 'types/tradeLimit';
 import { LimitLock } from 'components/Trade/TradeLimit/LimitLock';
 import { LimitExpiry } from 'components/Trade/TradeLimit/LimitExpiry';
+import { TradeDetails } from 'components/Trade/TradeDetails';
+import { Button } from 'commonComponents/Button';
+import { TradeConfirmModal } from 'components/Trade/TradeConfirmModal';
 
 
 export const TradeLimit = () => {
@@ -42,6 +45,7 @@ export const TradeLimit = () => {
       value: null
     }
   });
+  const [isConfirmOpen, setConfirmOpen] = useState<boolean>(false);
 
   useEffect(() => {
     const receivedCurrency = {
@@ -109,6 +113,11 @@ export const TradeLimit = () => {
     setOrderParameters(newOrderParameters);
   };
 
+  const handleChangeRate = (rate: number) => {
+    const newOrderParameters = {...orderParameters, rate};
+    setOrderParameters(newOrderParameters);
+  };
+
   return (
     <div className="trade-limit">
       <div className="trade-limit__currency-cards">
@@ -165,12 +174,35 @@ export const TradeLimit = () => {
         />
       </div>
       <div className="trade-limit-order-parameters">
-        <MarketCard orderParameters={orderParameters} />
+        <MarketCard orderParameters={orderParameters} onRateChange={handleChangeRate} />
         <div className="trade-limit-order-parameters__expiry-settings">
           <LimitLock locked={orderParameters?.locked} onSwitchLock={handleSwitchLock} />
           <LimitExpiry expiry={orderParameters?.expiry} onChangeExpiry={handleChangeExpiry} />
         </div>
       </div>
+      <TradeDetails title="Order details" />
+      <Button
+        style={{width: '100%', marginTop: 10}}
+        onClick={() => setConfirmOpen(true)}
+      >
+        Create order
+      </Button>
+      <Button
+        theme="dark"
+        style={{width: '100%', marginTop: 15}}
+      >
+        Active orders
+      </Button>
+      <TradeConfirmModal
+        title="Confirm order"
+        successText="Confirm order"
+        detailsTitle="Order details"
+        isOpen={isConfirmOpen}
+        onClose={() => setConfirmOpen(false)}
+        onSuccess={() => setConfirmOpen(false)}
+        receivedCurrency={currencyList.find(item => item.role === 'receive') || currencyList[0]}
+        sendCurrency={currencyList.find(item => item.role === 'send') || currencyList[1]}
+      />
     </div>
   );
 };

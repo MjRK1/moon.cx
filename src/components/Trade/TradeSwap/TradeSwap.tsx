@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { MotionCurrencyCard } from 'src/components/Trade/CurrencyCard';
 import { ICurrency } from 'types/tradeSwap';
 import { motion } from 'motion/react';
-import { SwapDetails } from 'components/Trade/TradeSwap/SwapDetails';
 import { Button } from 'commonComponents/Button';
-import { ConfirmSwapModal } from 'components/Trade/TradeSwap/ConfirmSwapModal';
+import { TradeDetails } from 'components/Trade/TradeDetails';
+import { TradeConfirmModal } from 'components/Trade/TradeConfirmModal';
 
 
 export const TradeSwap = () => {
@@ -106,14 +106,17 @@ export const TradeSwap = () => {
           onChangeCurrencyAmount={handleChangeCurrencyAmount}
         />
       </div>
-      <SwapDetails />
+      <TradeDetails title="Swap details" />
       <Button
         style={{width: '100%', marginTop: 10}}
         onClick={() => setConfirmOpen(true)}
       >
         Swap
       </Button>
-      <ConfirmSwapModal
+      <TradeConfirmModal
+        title="Confirm swap"
+        successText="Confirm swap"
+        detailsTitle="Swap details"
         isOpen={isConfirmOpen}
         onClose={() => setConfirmOpen(false)}
         onSuccess={() => setConfirmOpen(false)}

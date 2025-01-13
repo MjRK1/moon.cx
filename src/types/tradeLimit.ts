@@ -25,6 +25,7 @@ export interface IOrderParameters {
 
 export interface IMarketCardProps {
   orderParameters: IOrderParameters,
+  onRateChange: (rate: number) => void,
 }
 
 export interface ILimitLockProps {

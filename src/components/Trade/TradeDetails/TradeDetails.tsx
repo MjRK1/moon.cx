@@ -22,9 +22,10 @@ const SWAP_DETAILS_ITEMS = [
   }
 ];
 
-export const SwapDetails = (props: ISwapDetailsProps) => {
+export const TradeDetails = (props: ISwapDetailsProps) => {
   const {
-    defaultOpen = false
+    defaultOpen = false,
+    title
   } = props;
 
   const [isOpen, setIsOpen] = useState<boolean>(defaultOpen);
@@ -74,7 +75,7 @@ export const SwapDetails = (props: ISwapDetailsProps) => {
         onClick={() => setIsOpen(!isOpen)}
       >
         <motion.div className="swap-details-header__title">
-          Swap details
+          {title}
         </motion.div>
         <motion.div
           className="swap-details-header__wrap-button"

@@ -1,6 +1,7 @@
 .trade-swap {
     position: relative;
     width: 460px;
+    min-height: 650px;
     margin-bottom: 20px;
 }
 .trade-swap__currency-cards {
