@@ -66,6 +66,7 @@ export const TradeSwap = () => {
               bounce: 0
             }
           }}
+          mode="swap"
           style={{marginBottom: 15}}
           onChangeCurrencyAmount={handleChangeCurrencyAmount}
         />
@@ -103,6 +104,7 @@ export const TradeSwap = () => {
               bounce: 0
             }
           }}
+          mode="swap"
           onChangeCurrencyAmount={handleChangeCurrencyAmount}
         />
       </div>

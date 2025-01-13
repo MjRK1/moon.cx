@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'moon-cx';
-  src:  url('fonts/moon-cx.eot?o3b17i');
-  src:  url('fonts/moon-cx.eot?o3b17i#iefix') format('embedded-opentype'),
-    url('fonts/moon-cx.ttf?o3b17i') format('truetype'),
-    url('fonts/moon-cx.woff?o3b17i') format('woff'),
-    url('fonts/moon-cx.svg?o3b17i#moon-cx') format('svg');
+  src:  url('fonts/moon-cx.eot?y9ya1f');
+  src:  url('fonts/moon-cx.eot?y9ya1f#iefix') format('embedded-opentype'),
+    url('fonts/moon-cx.ttf?y9ya1f') format('truetype'),
+    url('fonts/moon-cx.woff?y9ya1f') format('woff'),
+    url('fonts/moon-cx.svg?y9ya1f#moon-cx') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.moon-cx-arrow-right:before {
+  content: "\e90e";
+}
 .moon-cx-closed-lock:before {
   content: "\e904";
 }
