@@ -1,0 +1,38 @@
+.trade-limit {
+    position: relative;
+    width: 460px;
+    min-height: 650px;
+    margin-bottom: 50px;
+}
+.trade-limit__currency-cards {
+    position: relative;
+    width: 100%;
+}
+.trade-limit__limit-button {
+    position: absolute;
+    top: 100px;
+    left: 44%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--color-black6);
+    border: 8px solid var(--color-black7);
+    color: #76768F;
+    cursor: pointer;
+    z-index: 10;
+}
+.trade-limit-order-parameters {
+    display: flex;
+    gap: 10px;
+    max-height: 138px;
+}
+.trade-limit-order-parameters__expiry-settings {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin-top: 10px;
+    max-height: 138px;
+}

@@ -1,0 +1,29 @@
+.custom-expiry-period {
+    padding: 15px 0;
+}
+.custom-expiry-period__hours-input {
+    margin-bottom: 10px;
+}
+.custom-expiry-input__unfocused-input {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding-left: 15px;
+    background-color: var(--color-black3);
+    border: 1px solid var(--color-black2);
+    border-radius: 6px;
+    cursor: text;
+    user-select: none;
+}
+.custom-expiry-input__unfocused-input > span {
+    color: var(--color-grey0);
+    font-size: var(--font-size16);
+    font-weight: 500;
+    margin-left: 10px;
+}
+.custom-expiry-input__focused-inputs {
+    height: 70px;
+    align-items: center;
+    line-height: 70px;
+    font-weight: 500;
+}

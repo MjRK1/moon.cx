@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'moon-cx';
+  src:  url('fonts/moon-cx.eot?y9ya1f');
+  src:  url('fonts/moon-cx.eot?y9ya1f#iefix') format('embedded-opentype'),
+    url('fonts/moon-cx.ttf?y9ya1f') format('truetype'),
+    url('fonts/moon-cx.woff?y9ya1f') format('woff'),
+    url('fonts/moon-cx.svg?y9ya1f#moon-cx') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="moon-cx-"], [class*=" moon-cx-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'moon-cx' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.moon-cx-arrow-right:before {
+  content: "\e90e";
+}
+.moon-cx-closed-lock:before {
+  content: "\e904";
+}
+.moon-cx-currency-quantity:before {
+  content: "\e90d";
+}
+.moon-cx-connect-wallet:before {
+  content: "\e90c";
+}
+.moon-cx-telegram:before {
+  content: "\e90a";
+}
+.moon-cx-xwitter:before {
+  content: "\e90b";
+}
+.moon-cx-cross:before {
+  content: "\e909";
+}
+.moon-cx-arrow-down:before {
+  content: "\e905";
+}
+.moon-cx-convert:before {
+  content: "\e900";
+}
+.moon-cx-swap-currency:before {
+  content: "\e901";
+}
+.moon-cx-settings:before {
+  content: "\e902";
+}
+.moon-cx-locale:before {
+  content: "\e903";
+}
+.moon-cx-opened-lock:before {
+  content: "\e907";
+}
+.moon-cx-moon-icon:before {
+  content: "\e908";
+}

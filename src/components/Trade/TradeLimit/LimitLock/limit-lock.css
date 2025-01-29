@@ -1,0 +1,27 @@
+.expiry-settings__lock-btn {
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 0;
+    user-select: none;
+    background: var(--color-black2);
+    color: var(--color-white);
+    font-size: var(--font-size14);
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 10px;
+    flex-grow: 0.5;
+}
+
+.expiry-settings__lock-btn--unlocked {
+    background: var(--color-blue1);
+    color: var(--color-black6);
+}
+
+
+.lock-btn__icon {
+    width: 14px;
+    margin-right: 5px;
+}
