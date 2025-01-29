@@ -6,8 +6,8 @@
   "scripts": {
     "start": "vite --port 3000",
     "dev": "vite --port 3000",
-    "server": "serve -s ./dist -p 8080",
-    "build": "tsc -b && vite build",
+    "serve": "serve -s ./dist -p 8080",
+    "build": "vite build",
     "lint": "eslint .",
     "check": "npm run lint",
     "precommit": "npm run check",
